@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <title>Art portfolio</title>
+    <link href="style.css" rel="css stylesheet">
+  <body>
+    <header>
+      <h1 class="header-title">Art Portfolio</h1>
+      <nav>
+        <a href="info.html">info</a>
+        <a href="more-works.html">more</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Brief View</h2>
+      <div id="my-carousel" class="carousel slide" dara-ride="carousel">
+        <!-- the .slide class is supposed to be used for css animation as carousel slides -->
+        <!-- data-ride tells bootstrap that the carousel works as soon as the page loads -->
+        
+        <!-- indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <!-- the actual slide part -->
+          <div class="item active">
+            <!-- the content of each slide is defined in the class .item -->
+            <img src="carousel_first.jpg" alt="image-1">
+          </div>
+          <div class="item">
+            <img src="carousel_second.jpg" alt="image-2">
+          </div>
+          <div class="item">
+            <img src="carousel-third.jpg" alt="image-3">
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      
+
+    </div>
+  </body>
+  <footer></footer>
+</html>
