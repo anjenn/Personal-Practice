@@ -1,0 +1,13 @@
+dim_set = set()
+
+for idx1, el1 in enumerate(height):
+    for idx2, el2 in enumerate(height):
+        if(idx2 >= idx1):
+            print(f"indices: {idx1}, {idx2} \n")
+            print(f"width, height: {(idx2-idx1)}, {min(height[idx1], height[idx2])} \n")
+            area = (idx2-idx1)*min(height[idx1], height[idx2])
+            print(f"el1: {el1}, el2: {el2}, area: {area} \n")
+            dim_set.add(area)
+
+print(f"{dim_set}\n")
+print(f"{max(dim_set)}\n")
